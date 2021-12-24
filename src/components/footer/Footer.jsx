@@ -13,7 +13,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 10vh;
   width: 100%;
   padding: 2rem;
   @media screen and (min-width: 468px) {
@@ -26,9 +26,9 @@ const Right = styled.div`
   justify-content: center;
   align-items: center;
   h1 {
-      text-align:center;
+    text-align: center;
     color: #fff;
-    clamp(1.5rem,6vw,2rem);
+    font-size: 1rem;
   }
 `;
 
@@ -43,7 +43,10 @@ const SocialIcons = styled.div`
 `;
 const SocialLink = styled.a`
   margin-right: 10px;
-  color: orange;
+  color: white;
+  .icon {
+    font-size: 20px;
+  }
   @media screen and (min-width: 468px) {
     margin-right: 1.5rem;
     font-size: 1.5rem;
@@ -59,16 +62,16 @@ const Footer = () => {
       <Left>
         <SocialIcons>
           <SocialLink href="https://www.facebook.com/">
-            <FaFacebookF />
+            <FaFacebookF className="icon" />
           </SocialLink>
           <SocialLink href="https://www.youtube.com/">
-            <FaYoutube />
+            <FaYoutube className="icon" />
           </SocialLink>
           <SocialLink href="https://www.linkedin.com/">
-            <FaLinkedin />
+            <FaLinkedin className="icon" />
           </SocialLink>
           <SocialLink href="https://www.instagram.com/?hl=es">
-            <FaInstagram />
+            <FaInstagram className="icon" />
           </SocialLink>
         </SocialIcons>
       </Left>
